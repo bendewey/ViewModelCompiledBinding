@@ -14,7 +14,7 @@
 
         <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
             <TextBlock FontSize="36" Text="ViewModel Compiled Binding Example" TextWrapping="Wrap" Margin="20" />
-            <TextBox Header="Username" Text="{x:Bind ViewModel.Username}"/>
+            <TextBox Header="Username" Text="{x:Bind ViewModel.Username, Mode=TwoWay}"/>
         </StackPanel>
         
 
