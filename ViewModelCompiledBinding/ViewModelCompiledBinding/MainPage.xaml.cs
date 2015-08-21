@@ -20,11 +20,18 @@ namespace ViewModelCompiledBinding
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage : BasePage
     {
         public MainPage()
         {
             this.InitializeComponent();
+            //DataContextChanged += (s, e) =>
+            //{
+            //    ViewModel = DataContext as MainPageViewModel;
+            //};
+            ConfigureCompiledBinding(() => ViewModel);
         }
+
+        public MainPageViewModel ViewModel { get; set; }
     }
 }
