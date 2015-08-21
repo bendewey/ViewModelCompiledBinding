@@ -25,11 +25,6 @@ namespace ViewModelCompiledBinding
         public MainPage()
         {
             this.InitializeComponent();
-            //DataContextChanged += (s, e) =>
-            //{
-            //    ViewModel = DataContext as MainPageViewModel;
-            //};
-            ConfigureCompiledBinding(() => ViewModel);
         }
 
         public MainPageViewModel ViewModel { get; set; }
